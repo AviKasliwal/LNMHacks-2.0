@@ -183,7 +183,7 @@ a img{
   height: 600px;
   width: auto;
   background-color: #f3f3f3;
-  background: url('images/bg.jpg') center 30% no-repeat;
+  background: url('images/website (1).png') center 30% no-repeat;
 /*  opacity: 0.8;*/
   background-size: cover;
 }
@@ -194,6 +194,7 @@ a img{
   color:#f44645;
   
   font-weight: 500;
+ 
 }
 
 .lnmhacks-slogan {
@@ -264,7 +265,7 @@ a img{
 
   .lnmhacks-wear .lnmhacks-screen-image {
     width: 40%;
-    z-index: 1;
+    /* z-index: 1; */
   }
 
 
@@ -330,12 +331,20 @@ a img{
     }
 
 @media (max-width: 450px) { 
+   .content{
+     
+     left: 50% !important;
+   }
     .lnmhacks-wear-section {
       position: relative;
       /*background: url('images/wear.jpg');*/
       background: #fff;
       background-repeat: no-repeat;
       min-height: 900px;
+    
+    }
+    .lnmhack_3{
+      width: 400px !important;
     }
 }
 
@@ -348,17 +357,11 @@ a img{
       min-height: 300px;
     }
 
-@media (max-width: 450px) { 
-    .lnmhacks-wear-section.judges-pk {
-      position: relative;
-      background: #fff;
-      background-repeat: no-repeat;
-    }
-}
+
 
 
 .lnmhacks-wear-band {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -540,12 +543,32 @@ a img{
 
 /**** Mobile layout ****/
 @media (max-width: 900px) {
+
+  .lnmhack_3{
+    margin-top: -10%;
+  }
+  .lnmhacks-sub-slogan{
+    margin-top: -2%;
+  }
+  .content{
+    margin-left: 15% !important;
+    margin-top: 5% !important;
+  } 
+  
+   .dat{
+    margin-left: 20% !important;
+    margin-top: -3% !important;
+  }
+  .logoimg{
+    margin-top: -9%;
+   }
   .lnmhacks-navigation-container {
     display: none;
   }
 
   .lnmhacks-title {
     display: none !important;
+    margin-top: -2%;
   }
   
   .register-cta{
@@ -605,6 +628,7 @@ a img{
 
   .lnmhacks-be-together-section {
     height: 350px;
+    
   }
 
   .lnmhacks-slogan {
@@ -639,6 +663,10 @@ a img{
 
   .lnmhacks-footer .mdl-mega-footer--bottom-section {
     display: none;
+  }
+  .reg{
+    display: none !important;
+    
   }
 }
 
@@ -732,10 +760,11 @@ a img{
 .content {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 20%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 35px;
+  /* font-size: 35px; */
+
   line-height: 40px;
   font-family: 'Lato', sans-serif;
   color: #ecf0f1;
@@ -748,6 +777,7 @@ a img{
   overflow: hidden;
   height: 40px;
   padding: 0 40px;
+  
 }
 /*.visible:before {
   content: '{';
@@ -794,7 +824,7 @@ a img{
   font-family: 'Titillium Web', 'Helvetica', 'Arial', sans-serif;
   line-height: 1;
   color:#f44645;
-  font-size: 32px !important;
+  font-size: 10px !important;
   font-weight: 500;
   line-height: 40px;
   margin-top: 0;
@@ -996,3 +1026,123 @@ body::-webkit-scrollbar-thumb
 }
 
 /*=====  End of Cards Override Sponosrs  ======*/
+/*CSS for timer */
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,500);
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+/* :root {
+  background: #212121;
+  color: #cdd3de;
+  font-family: 'Dosis', sans-serif;
+} */
+
+/* body {
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+} */
+ 
+ 
+
+.cl {
+ display:flex;
+ align-items: center;
+  justify-content: center;
+	height:100%;
+}
+
+div#js-clock {
+  width: 100%;
+    max-width: 50%;
+  
+  display: flex;
+  flex-direction:column;
+  margin-bottom: 1px;
+  margin: auto 0;
+  align-content:space-around;
+  font-family: 'Dosis', sans-serif;
+  align-items: center;
+  
+}
+
+.box {
+  
+  margin: 0 4px;
+  text-align: center;
+  text-transform: uppercase;
+  height: 90px;
+  width: 90px;
+  border: none;
+  font-weight:700;
+  font-size: 16px;
+}
+
+
+@media (min-width: 1440px) {
+  .content{
+    margin-left: -25% !important;
+  }
+  
+  .box span {
+    width: 60px;
+    line-height: 60px;
+    font-size: 48px;
+    
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+ 
+  
+  .box span {
+    width: 70px;
+    line-height: 70px;
+    font-size: 56px;
+  }
+  #js-clock {
+    margin-top: 1%;
+    margin-left: 4%;
+  }
+  
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .box span {
+    width: 70px;
+    line-height: 70px;
+    font-size: 38px;
+  }
+  .content{
+    margin-top: 10% !important;
+   
+  }
+}
+
+@media (max-width: 479px) {
+  
+  .box {
+    font-size: 10px;
+  }
+
+  .box span {
+    width: 60px;
+    line-height: 60px;
+    font-size: 36px;
+  }
+}
+.cd--numbers {
+  font-weight: bold;
+  font-size: 3.5em;
+  padding: 0.01em;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#js-clock-days,#js-clock-hours,#js-clock-minutes,#js-clock-seconds {
+ color: #E3E3E3;
+}
+
+/* CSS for timer ends */
