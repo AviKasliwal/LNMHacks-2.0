@@ -183,7 +183,7 @@ a img{
   height: 600px;
   width: auto;
   background-color: #f3f3f3;
-  background: url('images/website (1).png') center 30% no-repeat;
+  background: url('images/website(1).png') center 30% no-repeat;
 /*  opacity: 0.8;*/
   background-size: cover;
 }
